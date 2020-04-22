@@ -9,8 +9,8 @@ module.exports = {
     confirmPassword: '//label[contains(text(),"confirm password")]/parent::div/div/input[contains(@class, "MuiInputBase-input")]',
   },
   signUp(name, email, password, confirmPassword) {
-    I.waitForVisible(this.fields.email);
-    I.fillField(this.fields.name, email);
+    I.waitForVisible(this.fields.name);
+    I.fillField(this.fields.name, name);
     I.fillField(this.fields.email, email);
     I.fillField(this.fields.password, password);
     I.fillField(this.fields.confirmPassword, confirmPassword);

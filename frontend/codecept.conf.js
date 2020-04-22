@@ -10,7 +10,6 @@ exports.config = {
     },
   },
   include: {
-    I: './tests/steps_file.js',
     Page: './tests/acceptance/pages/*.js',
   },
   mocha: {},
